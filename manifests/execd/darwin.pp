@@ -36,7 +36,7 @@ runs jobs submitted by users to GridEngine.",
 
     include shell::profile_d
     file { '/etc/profile.d/sge.sh':
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
         content => "
 export SGE_ROOT=${sge_root}
 export SGE_CLUSTER_NAME=${cluster_name}
